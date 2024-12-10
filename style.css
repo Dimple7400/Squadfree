@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+      font-family: "Raleway", sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+/*--------------navbar-------------*/
+.scrolled .header {
+    background-color: #4b99bb;
+}
+.banner{
+    background-image: url("hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+.header{
+    background-color: #4b99bb;
+}
+.header .navbar-brand{
+     font-size: 25px;
+}
+.header .navbar-nav li a{
+    font-weight: 500;
+    display: inline-block;
+}
+.header .navbar-nav li a:hover{
+    background-color: #5ec4dd;
+}
+.dropdown:hover > .dropdown-menu{
+    display: block;
+}
+.dropend:hover .dropdown-menu{
+    display: block;
+}
+.dropend:hover > .dropdown-menu{
+    position: absolute;
+    top: 0;
+    right: 100%;
+}
+
+/*------------navbar exit-------------*/
+/*-----------banner------------*/
+.banner{
+    background-image: url("hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.banner .banner-topic{
+     padding: 25% 0% 0% 0%;
+}
+.banner .header-topic h1{
+    font-size: 50px;
+}
+.banner .banner-topic h2{
+    font-size: 50px;
+    font-weight: 500;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-name: heartbreak;
+    animation-iteration-count: infinite;    
+}
+@keyframes heartbreak{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@media (max-width:896px){
+    .banner .banner-topic {
+    padding: 77% 0% 0% 0%;
+    }
+}
+/*-------------banner exit---------------*/
+.about-us{
+    margin: 100px 0px;
+}
+.about-us .about-wapper .btn{
+    border:2px solid #4b99bb;
+    border-radius: 25px;
+    color: #4b99bb;
+    font-weight: 600;
+}
+.about-us .about-wapper .btn:hover{
+    background-color: #4b99bb;
+    color: white;
+}
+.about-us .about-wapper p{
+    font-size: 18px;
+}
+.about-us .about-item span{
+    color: #4b99bb ;
+}
+.about-us .about-item h4:hover{
+    color: #4b99bb;
+}
+/*-------------services-----------------*/
+.service-box{
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+.service .span, span {
+    color: #4b99bb;
+}
+.service-overlay{
+    background-color: #4b99bb;
+    position: absolute;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    bottom: -100%;
+    left:0;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+.service-box:hover .service-overlay{
+    bottom: 0;
+}
+.service-box .service-overlay p{
+    color: white;
+}
+/*-------------services exit-----------------*/
+/*-------------counter-----------------*/
+.count{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 7% 0px;
+}
+.count .counter-item .counter-content h2{
+    font-size: 50px;
+}
+/*-------------counter exit-----------------*/
+/*-------------action-----------------*/
+.action{
+    background-image: url(cta-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6% 0% 6% 0%;
+}
+.action .action-title h3 {
+    font-family: "Raleway", sans-serif;
+}
+.action .action-title p{
+    font-weight: 600;
+}
+.action .action-title .btn{
+       font-family: "Raleway", sans-serif;
+}
+.action .action-title .btn:hover{
+    color: white;
+    background-color: #4b99bb;
+}
+/*-------------action exit-----------------*/
+/*-------------portfolio-----------------*/
+.Portfolio{
+    margin: 100px 0px;
+}
+.Portfolio .Portfolio-button{
+     justify-items: center;
+}
+.Portfolio .Portfolio-button ul li{
+    list-style-type: none;
+}
+.Portfolio .Portfolio-image{
+     position: relative;
+}
+.Portfolio .Portfolio-text{
+    position: absolute;
+    bottom: 7%;
+    right: 4%;
+    display: none;
+}
+.Portfolio .Portfolio-image:hover .Portfolio-text{
+    display: block;
+}
+.Portfolio .Portfolio-button ul{
+    padding-left: 0;
+}
+/*-------------portfolio exit-----------------*/
+/*-------------testimonial-----------------*/
+.owl-carousel .item .testimonial-image img{
+        width: 110px;
+        margin-left: 150px;
+}
+.owl-carousel .item .testimonial-image span{
+    color: #4b99bb;
+}
+.owl-carousel .item .testimonial-image p{
+    font-size: 18px;
+    line-height: 1.7;
+}
+.owl-carousel .item{
+
+}
+/*-------------testimonial exit-----------------*/
+/*-------------team-----------------*/
+.team .team-image{
+    position: relative;
+}
+.team .team-image .team-text{
+    position: absolute;
+    bottom: -39px;
+    left: 14px;
+    width: 93%;
+    border-radius: 10px;
+}
+.team .team-image .team-text .team-icon{
+    position: absolute;
+    bottom: 85px;
+    left: 107px;
+    display: none;
+}
+.team .team-image .team-text .team-icon span{
+    border: 1px sold #4b99bb;
+    background-color: #4b99bb;
+    border-radius: 100%;
+    padding: 9px 12px;
+}
+.team .team-image:hover .team-text .team-icon{
+    display: block;
+}
+/*-------------team exit-----------------*/
+/*-------------pricing-----------------*/
+.Pricing{
+    margin:100px 0px;
+}
+.pricing-content{
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.pricing-content h4{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: #4b99bb;
+}
+.pricing-content ul{
+    padding: 0px;
+}
+.pricing-content ul li{
+    list-style-type: none;
+}
+.pricing-content ul li span{
+    font-size: 17px;
+}
+.pricing-content .btn{
+    border-radius: 20px;
+    border:2px solid #4b99bb;
+    color: #4b99bb;
+}
+.pricing-content .btn:hover{
+    background-color: #4b99bb;
+    color: white;
+}
+/*-------------pricing exit-----------------*/
+.question{
+    background-color: #9ec4dd;
+    padding: 4% 0% 3% 0%
+}
+.question .que-ans .accordion .accordion-item button{
+    color: gray;
+    font-weight: 500;
+}
+.question .que-ans .accordion .accordion-item button:hover{
+     color:red;
+}
+@media (max-width:896px){
+    .question{
+     padding: 14% 0% 10% 0%
+    }
+}
+/*-------------contect-----------------*/
+.contect-box{
+     box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+.contect-content .contect-address h5{
+     font-family: "Raleway", sans-serif;
+     font-weight: 700;
+}
+.contect .form{
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    margin: 20% 0px;
+}
+.contect .form h1{
+    margin-left: 11%;
+}
+.contect .form input[type="text"]{
+    padding: 14px 50% 14px 0px
+}
+.contect .form input[type="message"]{
+    padding: 10px 50% 200px 0px;
+}
+.contect .form input::placeholder{
+    padding-left: 10px;
+}
+.contect .form .btn{
+     border-radius: 25px;
+     border: 2px solid #4b99bb;
+     color: #4b99bb;
+     margin-left: 13%;
+}
+.contect .form .btn:hover{
+    color: white;
+    background-color: #4b99bb;
+}
+
+/*-------------contect exit-----------------*/
